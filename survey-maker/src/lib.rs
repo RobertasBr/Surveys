@@ -1,8 +1,3 @@
-use std::sync::LazyLock;
-use surrealdb::engine::remote::ws::Client;
-use surrealdb::Surreal;
-
-pub static DB: LazyLock<Surreal<Client>> = LazyLock::new(Surreal::init);
 pub mod app;
 
 #[cfg(feature = "hydrate")]

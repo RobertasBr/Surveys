@@ -1,5 +1,5 @@
 [package]
-name = "survey-test-template"
+name = "survey-maker"
 version = "0.1.0"
 edition = "2021"
 
@@ -16,8 +16,10 @@ leptos_meta = { version = "0.6", features = ["nightly"] }
 leptos_actix = { version = "0.6", optional = true }
 leptos_router = { version = "0.6", features = ["nightly"] }
 wasm-bindgen = "=0.2.93"
-surrealdb = "2.0.4"
+serde = "1.0.210"
 tokio = "1.40.0"
+
+
 
 [features]
 csr = ["leptos/csr", "leptos_meta/csr", "leptos_router/csr"]
@@ -41,7 +43,7 @@ panic = "abort"
 
 [package.metadata.leptos]
 # The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
-output-name = "survey-test-template"
+output-name = "survey-maker"
 # The site root folder is where cargo-leptos generate all output. WARNING: all content of this folder will be erased on a rebuild. Use it in your server setup.
 site-root = "target/site"
 # The site-root relative folder where all compiled output (JS, WASM and CSS) is written
